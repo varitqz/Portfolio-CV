@@ -1,0 +1,17 @@
+JANNIK RICHTER PORTFOLIO — FINAL RELEASE
+Release date: 2026-09-10
+
+This folder is the single source of truth for the portfolio from this point forward.
+Open index.html after extracting the ZIP, or use the standalone HTML supplied alongside the ZIP.
+
+Included:
+- Responsive dark/light portfolio
+- Purple / violet visual system
+- Photo and current CV information
+- Experience, projects, labs, skills, learning path and contact
+- DE / EN toggle
+- Animated skill filters / fades
+- KQL query drawer
+- Recruiter view and command palette
+- Print / Save as PDF
+- Local assets only; no external framework required

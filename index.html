@@ -1,0 +1,466 @@
+<!doctype html>
+<html lang="de" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Interaktives Portfolio von Jannik Richter – IT Support Specialist mit Cloud Security Fokus. Azure, Entra ID, KQL, RBAC, Bicep, Service Desk und praktische Security Labs." />
+  <meta name="author" content="Jannik Richter" />
+  <meta name="theme-color" content="#0a0f18" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Jannik Richter — IT Support → Cloud Security" />
+  <meta property="og:description" content="IT Support Specialist aus Hamburg mit Fokus auf Microsoft Azure, Identity, KQL und Cloud Security." />
+  <meta property="og:image" content="assets/jannik.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <title>Jannik Richter — IT Support → Cloud Security</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Zum Inhalt springen</a>
+
+  <div class="site-noise" aria-hidden="true"></div>
+  <div class="ambient ambient-a" aria-hidden="true"></div>
+  <div class="ambient ambient-b" aria-hidden="true"></div>
+
+  <header class="topbar" id="top">
+    <a class="brand" href="#top" aria-label="Zur Startseite">
+      <span class="brand-mark">JR</span>
+      <span class="brand-copy">
+        <strong>Jannik Richter</strong>
+        <small>IT Support → Cloud Security</small>
+      </span>
+    </a>
+
+    <nav class="desktop-nav" aria-label="Hauptnavigation">
+      <a href="#experience" data-i18n="nav.experience">Erfahrung</a>
+      <a href="#projects" data-i18n="nav.projects">Projekte</a>
+      <a href="#skills" data-i18n="nav.skills">Skills</a>
+      <a href="#learning" data-i18n="nav.learning">Lernpfad</a>
+      <a href="#contact" data-i18n="nav.contact">Kontakt</a>
+    </nav>
+
+    <div class="top-actions">
+      <button class="icon-button" id="languageToggle" type="button" aria-label="Sprache wechseln" title="Deutsch / English">DE</button>
+      <button class="icon-button" id="themeToggle" type="button" aria-label="Farbschema wechseln" title="Farbschema wechseln">
+        <span aria-hidden="true">◐</span>
+      </button>
+      <button class="icon-button mobile-menu-button" id="menuToggle" type="button" aria-label="Menü öffnen" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu" hidden>
+    <a href="#experience" data-i18n="nav.experience">Erfahrung</a>
+    <a href="#projects" data-i18n="nav.projects">Projekte</a>
+    <a href="#skills" data-i18n="nav.skills">Skills</a>
+    <a href="#learning" data-i18n="nav.learning">Lernpfad</a>
+    <a href="#contact" data-i18n="nav.contact">Kontakt</a>
+  </div>
+
+  <main id="main">
+    <section class="hero section-shell reveal" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <div class="eyebrow-row">
+          <span class="status-pill"><span class="status-dot"></span><span data-i18n="hero.status">Hamburg · offen für passende Junior-/Next-Step-Rollen</span></span>
+          <span class="micro-label">09 / 2026</span>
+        </div>
+
+        <p class="hero-kicker" data-i18n="hero.kicker">IT SUPPORT SPECIALIST · CLOUD SECURITY FOCUS</p>
+        <h1 id="hero-title">
+          <span data-i18n="hero.headlineA">Ich löse heute</span>
+          <span class="accent-text" data-i18n="hero.headlineB">IT-Probleme.</span>
+          <span data-i18n="hero.headlineC">Ich baue für morgen</span>
+          <span class="accent-text alt" data-i18n="hero.headlineD">Security-Skills.</span>
+        </h1>
+        <p class="hero-lead" data-i18n="hero.lead">IT-Support-Spezialist mit praktischer Erfahrung im 1st-Level-Support und in der technischen Anwenderbetreuung. Mein nächster Schritt: Microsoft Azure, Identity, KQL und Cloud Security nicht nur lernen, sondern sichtbar bauen.</p>
+
+        <div class="hero-ops-strip" aria-label="Aktuelle Schwerpunkte im Hero-Bereich">
+          <span>Identity-first</span>
+          <span>KQL investigations</span>
+          <span>Built in public</span>
+          <span>Cloud Security path</span>
+        </div>
+
+        <div class="hero-actions">
+          <a class="button primary" href="#projects" data-i18n="hero.ctaProjects">Projekte ansehen</a>
+          <button class="button secondary" id="printCv" type="button" data-i18n="hero.ctaCv">CV drucken / als PDF sichern</button>
+          <button class="button ghost" id="openPalette" type="button"><span data-i18n="hero.ctaPalette">Quick actions</span><kbd>⌘ K</kbd></button>
+        </div>
+
+        <div class="hero-meta" aria-label="Kurzprofil">
+          <div>
+            <span class="meta-label" data-i18n="hero.metaRole">Aktuelle Rolle</span>
+            <strong>IT Support Specialist</strong>
+            <small>DATAGROUP · Hamburg</small>
+          </div>
+          <div>
+            <span class="meta-label" data-i18n="hero.metaFocus">Aktueller Fokus</span>
+            <strong>Azure · Entra ID · KQL</strong>
+            <small>RBAC · Zero Trust · Bicep</small>
+          </div>
+          <div>
+            <span class="meta-label" data-i18n="hero.metaTarget">Zielrichtung</span>
+            <strong>SOC / Cloud Security</strong>
+            <small data-i18n="hero.metaTargetSmall">Hamburg · onsite / hybrid bevorzugt</small>
+          </div>
+        </div>
+      </div>
+
+      <aside class="hero-visual" aria-label="Profilbild und Kurzstatus">
+        <div class="hero-halo" aria-hidden="true"></div>
+        <div class="hero-grid-glow" aria-hidden="true"></div>
+
+        <div class="floating-console glass-card" aria-label="Fokus als kleines Terminal-Panel">
+          <div class="console-head"><span></span><span></span><span></span><strong>focus.live</strong></div>
+          <pre><code>&gt; current = ["Azure", "Entra ID", "KQL"]
+&gt; goal = "Cloud Security"
+&gt; mode = "learn → build → prove"</code></pre>
+        </div>
+
+        <div class="portrait-stage">
+          <svg class="sketch-line sketch-line-a" viewBox="0 0 620 790" fill="none" aria-hidden="true">
+            <path d="M84 82 C 42 98, 24 136, 28 190 L 30 614 C 34 684, 80 730, 150 736 L 482 754 C 544 756, 584 720, 590 654 L 598 178 C 596 118, 558 84, 494 80 L 84 82 Z"/>
+          </svg>
+          <svg class="sketch-line sketch-line-b" viewBox="0 0 620 790" fill="none" aria-hidden="true">
+            <path d="M132 46 C 78 50, 50 88, 48 146 L 42 626 C 44 694, 90 738, 160 742 L 486 738 C 548 732, 582 692, 584 632 L 574 144 C 568 84, 530 48, 466 44 L 132 46 Z"/>
+          </svg>
+          <svg class="sketch-spark sketch-spark-a" viewBox="0 0 120 120" fill="none" aria-hidden="true">
+            <path d="M60 12 L66 42 L96 48 L68 58 L74 88 L60 66 L46 88 L52 58 L24 48 L54 42 Z"/>
+          </svg>
+          <svg class="sketch-spark sketch-spark-b" viewBox="0 0 120 120" fill="none" aria-hidden="true">
+            <path d="M60 18 L64 44 L90 48 L66 58 L72 82 L60 66 L48 82 L54 58 L30 48 L56 44 Z"/>
+          </svg>
+          <span class="frame-bracket bracket-tl" aria-hidden="true"></span>
+          <span class="frame-bracket bracket-tr" aria-hidden="true"></span>
+          <span class="frame-bracket bracket-bl" aria-hidden="true"></span>
+          <span class="frame-bracket bracket-br" aria-hidden="true"></span>
+          <span class="orbit-dot orbit-dot-a" aria-hidden="true"></span>
+          <span class="orbit-dot orbit-dot-b" aria-hidden="true"></span>
+
+          <div class="portrait-frame">
+            <picture>
+              <source srcset="assets/jannik.webp" type="image/webp" />
+              <img src="assets/jannik.jpg" alt="Porträt von Jannik Richter" width="960" height="1200" loading="eager" />
+            </picture>
+            <div class="portrait-overlay" aria-hidden="true"></div>
+            <div class="portrait-tag tag-top">HAMBURG</div>
+            <div class="portrait-tag tag-bottom">BUILDING → CLOUD SECURITY</div>
+          </div>
+        </div>
+
+        <div class="signal-card glass-card">
+          <div class="signal-card-head">
+            <span data-i18n="hero.signalTitle">CURRENT SIGNAL</span>
+            <span class="pulse-dot" aria-hidden="true"></span>
+          </div>
+          <div class="signal-line"><span>Microsoft Azure</span><strong data-i18n="levels.active">aktiv</strong></div>
+          <div class="signal-line"><span>Entra ID / IAM</span><strong data-i18n="levels.active">aktiv</strong></div>
+          <div class="signal-line"><span>KQL / Investigations</span><strong data-i18n="levels.handsOn">hands-on</strong></div>
+          <div class="signal-line"><span>Bicep / Git</span><strong data-i18n="levels.building">aufbauend</strong></div>
+          <div class="signal-line muted"><span>AZ-900 / SC-900</span><strong data-i18n="levels.preparing">Vorbereitung</strong></div>
+        </div>
+
+        <div class="hero-edge-badge glass-card" aria-label="Karriereausrichtung">
+          <span class="edge-label">NEXT MOVE</span>
+          <strong>Support → Security</strong>
+          <small>Operational mindset · Microsoft focus · Hamburg</small>
+        </div>
+      </aside>
+    </section>
+
+    <section class="proof-strip reveal" aria-label="Kurzfakten">
+      <div><strong>1+ <span data-i18n="facts.years">Jahr</span></strong><span data-i18n="facts.support">professioneller IT-Support</span></div>
+      <div><strong>100</strong><span data-i18n="facts.questions">eigene AZ-900 / SC-900 Trainingsfragen im Lab</span></div>
+      <div><strong>3</strong><span data-i18n="facts.pillars">Security-Schwerpunkte: Identity · Detection · IaC</span></div>
+      <div><strong>2</strong><span data-i18n="facts.languages">Sprachen: Deutsch · Englisch</span></div>
+    </section>
+
+    <section class="section-shell reveal" id="experience" aria-labelledby="experience-title">
+      <div class="section-heading">
+        <div>
+          <span class="section-index">01</span>
+          <p class="section-kicker" data-i18n="experience.kicker">BERUFSERFAHRUNG</p>
+          <h2 id="experience-title" data-i18n="experience.title">Vom Service Desk Richtung Security.</h2>
+        </div>
+        <p data-i18n="experience.intro">Mein Fundament ist echter Anwendersupport: Störungen eingrenzen, sauber dokumentieren, priorisieren, eskalieren und technische Zusammenhänge verständlich machen.</p>
+      </div>
+
+      <div class="timeline">
+        <article class="timeline-item active">
+          <div class="timeline-dot" aria-hidden="true"></div>
+          <div class="timeline-date">08/2026 — <span data-i18n="common.present">heute</span></div>
+          <div class="timeline-content glass-card">
+            <div class="timeline-topline">
+              <div><h3>IT Support Specialist</h3><p>DATAGROUP · Hamburg</p></div>
+              <span class="role-badge" data-i18n="experience.current">CURRENT</span>
+            </div>
+            <p data-i18n="experience.dgText">Analyse von Fehlerbildern und Ableitung erster Maßnahmen zur schnellen Wiederherstellung des IT-Betriebs. Bearbeitung von Supportanfragen per Telefon, E-Mail und Ticket nach Priorität; Erstdiagnosen bei Netzwerk-, Drucker- und Hardwareproblemen; Dokumentation und Koordination komplexerer Fälle an nachgelagerte Fachbereiche.</p>
+            <div class="chip-row"><span>Service Desk</span><span>Windows</span><span>Ticketing</span><span>Troubleshooting</span><span>Escalation</span></div>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <div class="timeline-dot" aria-hidden="true"></div>
+          <div class="timeline-date">08/2025 — 08/2026</div>
+          <div class="timeline-content glass-card">
+            <div class="timeline-topline"><div><h3 data-i18n="experience.allgeierRole">Mitarbeiter 1st-Level-Support</h3><p>Allgeier Public SE · Hamburg</p></div></div>
+            <p data-i18n="experience.allgeierText">1st-Level-Support im Dataport-Umfeld per Telefon und E-Mail. Unterstützung bei Windows-Client, Outlook, Intranet, Netzwerk sowie Hardware-/Softwarethemen; Shadowing und Einarbeitung neuer Kollegen; strukturierte Weiterleitung komplexerer Fälle.</p>
+            <div class="chip-row"><span>1st Level</span><span>Windows Client</span><span>Outlook</span><span>Network basics</span><span>Knowledge transfer</span></div>
+          </div>
+        </article>
+
+        <article class="timeline-item compact">
+          <div class="timeline-dot" aria-hidden="true"></div>
+          <div class="timeline-date">09/2024 — 01/2025</div>
+          <div class="timeline-content glass-card">
+            <div class="timeline-topline"><div><h3 data-i18n="experience.salesRole">Verkäufer</h3><p>MFK Mobilfunkkontor · Hamburg</p></div></div>
+            <p data-i18n="experience.salesText">Beratung zu Mobilfunkverträgen, Endgeräten und Serviceleistungen sowie sorgfältige Erfassung und Prüfung von Kundendaten.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-shell reveal" id="projects" aria-labelledby="projects-title">
+      <div class="section-heading">
+        <div>
+          <span class="section-index">02</span>
+          <p class="section-kicker" data-i18n="projects.kicker">PROJEKTE & LABS</p>
+          <h2 id="projects-title" data-i18n="projects.title">Beweise statt nur Buzzwords.</h2>
+        </div>
+        <p data-i18n="projects.intro">Alles hier ist als Lern- oder Portfolioarbeit gekennzeichnet. Keine erfundene Berufserfahrung, keine überzogenen Skill-Prozente.</p>
+      </div>
+
+      <article class="featured-project glass-card">
+        <div class="project-copy">
+          <div class="project-meta"><span class="live-badge"><span class="status-dot"></span>SEP 2026</span><span data-i18n="projects.flagship">FLAGSHIP LAB</span></div>
+          <h3>Cloud Security Fundamentals Lab</h3>
+          <p class="project-summary" data-i18n="projects.cloudLabSummary">Local-first Trainingsplattform mit 100 eigenen AZ-900/SC-900-Fragen, Exam Mode, Weak-Area-Tracking, Identity-&-Access- und Zero-Trust-Investigations, KQL-Detections und Bicep-Beispielen.</p>
+          <div class="feature-list">
+            <span>100 original questions</span><span>Exam mode</span><span>Weak-area tracking</span><span>Identity & Access</span><span>KQL detections</span><span>Bicep examples</span><span>localStorage</span><span>Git</span>
+          </div>
+          <div class="project-actions">
+            <a class="button primary" href="https://varitqz.github.io/Cloud-Security-Fundamentals-Lab/" target="_blank" rel="noopener noreferrer" data-i18n="projects.openLive">Live öffnen ↗</a>
+            <a class="button secondary" href="https://github.com/varitqz/Cloud-Security-Fundamentals-Lab" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+          </div>
+        </div>
+        <div class="project-console" aria-label="Projektübersicht als Terminal">
+          <div class="console-head"><span></span><span></span><span></span><strong>cloud-security-lab</strong></div>
+          <pre><code><span class="code-comment">// learning, but built like a product</span>
+const lab = {
+  cloud: [<span class="code-string">"Azure"</span>, <span class="code-string">"Entra ID"</span>, <span class="code-string">"RBAC"</span>],
+  security: [<span class="code-string">"KQL"</span>, <span class="code-string">"Zero Trust"</span>],
+  iac: [<span class="code-string">"Bicep"</span>, <span class="code-string">"Git"</span>],
+  mindset: <span class="code-string">"learn → build → explain"</span>
+};</code></pre>
+        </div>
+      </article>
+
+      <div class="lab-grid">
+        <article class="lab-card glass-card" data-lab="signin">
+          <div class="lab-card-top"><span class="lab-icon">01</span><span class="lab-type">KQL · SOC</span></div>
+          <h3 data-i18n="projects.signinTitle">Failed Sign-in Triage</h3>
+          <p data-i18n="projects.signinText">Fehlgeschlagene Anmeldungen nach Benutzer und IP zusammenfassen, Zeitfenster setzen, Schwellenwerte prüfen und auffällige Quellen priorisieren.</p>
+          <button class="text-button show-query" type="button" data-query="signin" data-i18n="projects.showQuery">Query ansehen →</button>
+        </article>
+
+        <article class="lab-card glass-card" data-lab="roles">
+          <div class="lab-card-top"><span class="lab-icon">02</span><span class="lab-type">ENTRA · IAM</span></div>
+          <h3 data-i18n="projects.rolesTitle">Role Assignment Investigation</h3>
+          <p data-i18n="projects.rolesText">AuditLogs und RoleManagement nutzen, um nachzuvollziehen, wer eine Rolle wann und an welches Ziel vergeben hat — inklusive InitiatedBy und modifiedProperties.</p>
+          <button class="text-button show-query" type="button" data-query="roles" data-i18n="projects.showQuery">Query ansehen →</button>
+        </article>
+
+        <article class="lab-card glass-card" data-lab="endpoint">
+          <div class="lab-card-top"><span class="lab-icon">03</span><span class="lab-type">KC7 · MITRE ATT&CK</span></div>
+          <h3 data-i18n="projects.endpointTitle">Endpoint Discovery Analysis</h3>
+          <p data-i18n="projects.endpointText">ProcessEvents in einer Trainingsumgebung analysieren, Discovery-Kommandos wie whoami identifizieren und Verhalten auf MITRE ATT&CK-Techniken abbilden.</p>
+          <button class="text-button show-query" type="button" data-query="endpoint" data-i18n="projects.showQuery">Query ansehen →</button>
+        </article>
+      </div>
+
+      <div class="query-drawer glass-card" id="queryDrawer" hidden>
+        <div class="drawer-head">
+          <div><span class="section-kicker">QUERY VIEW</span><h3 id="queryTitle">KQL</h3></div>
+          <div class="drawer-actions"><button class="icon-button" id="copyQuery" type="button" aria-label="Query kopieren">⧉</button><button class="icon-button" id="closeQuery" type="button" aria-label="Query schließen">×</button></div>
+        </div>
+        <pre><code id="queryCode"></code></pre>
+        <p class="drawer-note" id="queryNote"></p>
+      </div>
+    </section>
+
+    <section class="section-shell reveal" id="skills" aria-labelledby="skills-title">
+      <div class="section-heading">
+        <div>
+          <span class="section-index">03</span>
+          <p class="section-kicker" data-i18n="skills.kicker">SKILL MAP</p>
+          <h2 id="skills-title" data-i18n="skills.title">Was ich kann — und wie belastbar.</h2>
+        </div>
+        <p data-i18n="skills.intro">Die Kategorien trennen Berufspraxis, Hands-on-Labs und aktives Lernen. Das ist für Recruiter aussagekräftiger als willkürliche 80%-Balken.</p>
+      </div>
+
+      <div class="skill-filter" role="group" aria-label="Skills filtern">
+        <button class="filter-button active" type="button" data-filter="all" data-i18n="skills.filterAll">Alle</button>
+        <button class="filter-button" type="button" data-filter="professional" data-i18n="skills.filterProfessional">Berufspraxis</button>
+        <button class="filter-button" type="button" data-filter="hands-on" data-i18n="skills.filterHandsOn">Hands-on Labs</button>
+        <button class="filter-button" type="button" data-filter="learning" data-i18n="skills.filterLearning">Aktives Lernen</button>
+      </div>
+
+      <div class="skill-matrix">
+        <article class="skill-card glass-card" data-category="professional">
+          <div class="skill-level"><span class="level-dot professional"></span><span data-i18n="skills.professional">BERUFSPRAXIS</span></div>
+          <h3>Service Desk & IT Support</h3>
+          <div class="skill-tags"><span>1st Level Support</span><span>Ticketing</span><span>Windows troubleshooting</span><span>Hardware & software</span><span>Network basics</span><span>Escalation</span><span>User communication</span></div>
+        </article>
+
+        <article class="skill-card glass-card" data-category="professional">
+          <div class="skill-level"><span class="level-dot professional"></span><span data-i18n="skills.professional">BERUFSPRAXIS</span></div>
+          <h3>Microsoft Workplace</h3>
+          <div class="skill-tags"><span>Windows Client</span><span>Outlook</span><span>Microsoft environment</span><span>Active Directory fundamentals</span><span>Documentation</span></div>
+        </article>
+
+        <article class="skill-card glass-card" data-category="hands-on">
+          <div class="skill-level"><span class="level-dot hands-on"></span><span data-i18n="skills.handsOn">HANDS-ON LABS</span></div>
+          <h3>Cloud & Identity</h3>
+          <div class="skill-tags"><span>Microsoft Azure</span><span>Entra ID</span><span>Azure RBAC</span><span>Management Groups</span><span>Subscriptions</span><span>Resource Groups</span><span>Conditional Access concepts</span><span>Zero Trust</span></div>
+        </article>
+
+        <article class="skill-card glass-card" data-category="hands-on">
+          <div class="skill-level"><span class="level-dot hands-on"></span><span data-i18n="skills.handsOn">HANDS-ON LABS</span></div>
+          <h3>Security Operations & KQL</h3>
+          <div class="skill-tags"><span>KQL</span><span>SigninLogs</span><span>AuditLogs</span><span>RoleManagement</span><span>ProcessEvents</span><span>MITRE ATT&CK</span><span>Detection logic</span><span>Incident triage</span></div>
+        </article>
+
+        <article class="skill-card glass-card" data-category="hands-on">
+          <div class="skill-level"><span class="level-dot hands-on"></span><span data-i18n="skills.handsOn">HANDS-ON LABS</span></div>
+          <h3>Infrastructure as Code & Workflow</h3>
+          <div class="skill-tags"><span>Bicep</span><span>Git</span><span>VS Code</span><span>PowerShell 7</span><span>Azure CLI</span><span>JSON / CSV</span><span>HTML / CSS / JavaScript</span></div>
+        </article>
+
+        <article class="skill-card glass-card" data-category="learning">
+          <div class="skill-level"><span class="level-dot learning"></span><span data-i18n="skills.learning">AKTIVES LERNEN</span></div>
+          <h3>Microsoft Security Stack</h3>
+          <div class="skill-tags"><span>Microsoft Sentinel</span><span>Defender for Cloud</span><span>Log Analytics</span><span>Data Connectors</span><span>Alerts → Incidents</span><span>AZ-900 prep</span><span>SC-900 prep</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-shell reveal" id="learning" aria-labelledby="learning-title">
+      <div class="section-heading">
+        <div>
+          <span class="section-index">04</span>
+          <p class="section-kicker" data-i18n="learning.kicker">LEARNING PATH</p>
+          <h2 id="learning-title" data-i18n="learning.title">Der nächste Schritt ist sichtbar.</h2>
+        </div>
+        <p data-i18n="learning.intro">Ich nutze Labs, Wiederholung und dokumentierte Projekte, damit aus Theorie belastbare Praxis wird.</p>
+      </div>
+
+      <div class="learning-layout">
+        <div class="learning-track glass-card">
+          <div class="track-line" aria-hidden="true"></div>
+          <article class="track-item done">
+            <span class="track-node">✓</span>
+            <div><small data-i18n="learning.foundationLabel">FOUNDATION</small><h3 data-i18n="learning.foundationTitle">Support & Troubleshooting</h3><p data-i18n="learning.foundationText">Professioneller 1st-Level-Support, Windows, Ticketing, Eskalation, Anwenderkommunikation und technische Fehleranalyse.</p></div>
+          </article>
+          <article class="track-item current">
+            <span class="track-node">●</span>
+            <div><small data-i18n="learning.currentLabel">CURRENT BUILD</small><h3>Azure · Identity · KQL · Bicep</h3><p data-i18n="learning.currentText">Cloud-Grundlagen mit Security-Fokus: Entra ID, RBAC, Logs, Investigations, Zero Trust und Infrastructure as Code.</p></div>
+          </article>
+          <article class="track-item next">
+            <span class="track-node">→</span>
+            <div><small data-i18n="learning.nextLabel">NEXT VALIDATION</small><h3>AZ-900 / SC-900</h3><p data-i18n="learning.nextText">Zertifizierungswissen systematisch festigen und parallel weiter über Labs und Portfolio-Projekte nachweisen.</p></div>
+          </article>
+          <article class="track-item future">
+            <span class="track-node">◇</span>
+            <div><small data-i18n="learning.targetLabel">TARGET</small><h3>SOC / Cloud Security / Identity</h3><p data-i18n="learning.targetText">Junior-Rolle oder sinnvoller Zwischenschritt in Hamburg, der Security-Nähe, Microsoft-Technologien und echte technische Tiefe verbindet.</p></div>
+          </article>
+        </div>
+
+        <aside class="principles-card glass-card">
+          <span class="section-kicker" data-i18n="learning.principlesKicker">WORKING STYLE</span>
+          <h3 data-i18n="learning.principlesTitle">Wie ich lerne und arbeite</h3>
+          <div class="principle"><span>01</span><div><strong data-i18n="learning.p1Title">Investigate</strong><p data-i18n="learning.p1Text">Nicht raten — Daten, Logs und Symptome eingrenzen.</p></div></div>
+          <div class="principle"><span>02</span><div><strong data-i18n="learning.p2Title">Document</strong><p data-i18n="learning.p2Text">Lösungswege so festhalten, dass sie wiederholbar werden.</p></div></div>
+          <div class="principle"><span>03</span><div><strong data-i18n="learning.p3Title">Build</strong><p data-i18n="learning.p3Text">Theorie über Labs, Code und kleine Systeme sichtbar machen.</p></div></div>
+          <div class="principle"><span>04</span><div><strong data-i18n="learning.p4Title">Explain</strong><p data-i18n="learning.p4Text">Technik verständlich kommunizieren — besonders im Support und im Incident-Kontext.</p></div></div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section-shell reveal education-section" aria-labelledby="education-title">
+      <div class="section-heading compact-heading">
+        <div>
+          <span class="section-index">05</span>
+          <p class="section-kicker" data-i18n="education.kicker">AUSBILDUNG & MEHR</p>
+          <h2 id="education-title" data-i18n="education.title">Technik mit Serviceverständnis.</h2>
+        </div>
+      </div>
+      <div class="education-grid">
+        <article class="glass-card education-card"><span class="education-year">2021 — 2024</span><h3 data-i18n="education.degree">Einzelhandelskaufmann</h3><p>Berufliche Schule für Wirtschaft und Handel Hamburg-Mitte · Hamburg</p></article>
+        <article class="glass-card education-card"><span class="education-year" data-i18n="education.languagesLabel">SPRACHEN</span><h3>Deutsch</h3><p data-i18n="education.german">Muttersprache</p><h3>English</h3><p data-i18n="education.english">Sehr gute Kenntnisse</p></article>
+        <article class="glass-card education-card"><span class="education-year" data-i18n="education.interestsLabel">INTERESSEN</span><h3 data-i18n="education.interestsTitle">Beyond the ticket queue</h3><p data-i18n="education.interests">Lesen · Technik · Homelabs · Musik produzieren</p></article>
+      </div>
+    </section>
+
+    <section class="contact-section reveal" id="contact" aria-labelledby="contact-title">
+      <div class="contact-inner section-shell">
+        <div class="contact-copy">
+          <span class="section-index">06</span>
+          <p class="section-kicker" data-i18n="contact.kicker">LET'S CONNECT</p>
+          <h2 id="contact-title" data-i18n="contact.title">Die passende nächste Rolle darf technisch sein.</h2>
+          <p data-i18n="contact.text">Ich suche langfristig den Weg in Cloud Security / SOC und bin offen für permanente Rollen in Hamburg, die dazu sinnvoll hinführen — besonders mit Microsoft-, Identity-, Security- oder stärkerem 2nd-Level-/Admin-Anteil.</p>
+          <div class="contact-actions">
+            <a class="button primary" href="mailto:jannikr41@gmail.com">jannikr41@gmail.com</a>
+            <a class="button secondary" href="https://www.linkedin.com/in/jannik-richter-41b629373" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+            <a class="button secondary" href="https://github.com/varitqz" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+          </div>
+        </div>
+
+        <div class="terminal-card glass-card" aria-label="Interaktive Portfolio-Konsole">
+          <div class="console-head"><span></span><span></span><span></span><strong>jannik@portfolio:~</strong></div>
+          <div class="terminal-history" id="terminalHistory" aria-live="polite">
+            <p><span class="prompt">$</span> <span>whoami</span></p>
+            <p class="terminal-output" data-i18n="terminal.whoami">Jannik Richter — IT Support Specialist building toward Cloud Security.</p>
+            <p><span class="prompt">$</span> <span>help</span></p>
+            <p class="terminal-output" data-i18n="terminal.help">Try: skills, projects, experience, contact, clear</p>
+          </div>
+          <form class="terminal-form" id="terminalForm">
+            <label class="sr-only" for="terminalInput">Terminal command</label>
+            <span class="prompt">$</span>
+            <input id="terminalInput" autocomplete="off" spellcheck="false" placeholder="skills" />
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer section-shell">
+    <div><strong>Jannik Richter</strong><span>Hamburg · Germany</span></div>
+    <p data-i18n="footer.note">Gebaut als interaktiver CV — ohne Tracker, Cookies oder externe Frameworks.</p>
+    <a href="#top" data-i18n="footer.backTop">Nach oben ↑</a>
+  </footer>
+
+  <div class="command-palette" id="commandPalette" hidden aria-hidden="true">
+    <div class="palette-backdrop" data-close-palette></div>
+    <div class="palette-dialog" role="dialog" aria-modal="true" aria-labelledby="paletteTitle">
+      <div class="palette-search">
+        <span>⌘</span>
+        <input id="paletteSearch" aria-labelledby="paletteTitle" placeholder="Quick action…" autocomplete="off" />
+        <kbd>ESC</kbd>
+      </div>
+      <h2 class="sr-only" id="paletteTitle">Quick actions</h2>
+      <div class="palette-list" id="paletteList">
+        <button type="button" data-action="projects"><span>↳</span><strong data-i18n="palette.projects">Zu Projekten springen</strong><kbd>P</kbd></button>
+        <button type="button" data-action="skills"><span>⌘</span><strong data-i18n="palette.skills">Skills öffnen</strong><kbd>S</kbd></button>
+        <button type="button" data-action="copy-email"><span>@</span><strong data-i18n="palette.email">E-Mail kopieren</strong><kbd>E</kbd></button>
+        <button type="button" data-action="linkedin"><span>in</span><strong>LinkedIn öffnen</strong><kbd>L</kbd></button>
+        <button type="button" data-action="github"><span>⌘</span><strong>GitHub öffnen</strong><kbd>G</kbd></button>
+        <button type="button" data-action="print"><span>↓</span><strong data-i18n="palette.print">CV drucken / PDF sichern</strong><kbd>D</kbd></button>
+        <button type="button" data-action="recruiter"><span>◎</span><strong data-i18n="palette.recruiter">Recruiter View umschalten</strong><kbd>R</kbd></button>
+      </div>
+      <div class="palette-footer"><span data-i18n="palette.hint">Tipp: Mit ↑ ↓ navigieren, Enter ausführen.</span><span id="paletteToast" aria-live="polite"></span></div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

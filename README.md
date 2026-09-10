@@ -25,11 +25,20 @@ Then open `http://localhost:8080`.
 
 ## Publish with GitHub Pages
 
-This repository is prepared for GitHub Pages. In GitHub, open **Settings → Pages → Deploy from a branch → main / root**.
+```bash
+git init
+git add .
+git commit -m "Launch portfolio"
+git branch -M main
+git remote add origin https://github.com/varitqz/portfolio.git
+git push -u origin main
+```
 
-## Privacy
+In GitHub: **Settings → Pages → Deploy from a branch → main / root**.
 
-The public portfolio intentionally shows only Hamburg, email, LinkedIn and GitHub rather than a street address or phone number. Detailed address/phone can remain in application documents sent directly to employers.
+## Before publishing
+
+The website intentionally shows only **Hamburg**, email, LinkedIn and GitHub rather than a street address or phone number. That is usually the safer public-portfolio setup. Keep the detailed address/phone in the application PDF you send directly to employers, not on the public site.
 
 ## Easy edits
 
